@@ -16,7 +16,6 @@ def setting_args():
                         help='whether to use the last action to choose action')
     parser.add_argument('--reuse_network', type=bool, default=True, help='whether to use one network for all agents')
     parser.add_argument('--gamma', type=float, default=0.99, help='discount factor')
-    parser.add_argument('--optimizer', type=str, default="RMS", help='optimizer')
     parser.add_argument('--evaluate_cycle', type=int, default=5000, help='how often to evaluate the model')
     parser.add_argument('--evaluate_epoch', type=int, default=32, help='number of the epoch to evaluate the agent')
     parser.add_argument('--model_dir', type=str, default='./model', help='model directory of the policy')

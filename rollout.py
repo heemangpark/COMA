@@ -26,8 +26,7 @@ class RolloutWorker:
         terminated, win = False, False
         step, episode_reward = 0, 0
         last_action = np.zeros((self.args.n_agents, self.args.n_actions))
-        # TODO policy.py -> COMA -> init_hidden(1)
-        # self.agents.policy.init_hidden(1)
+        self.agents.policy.init_hidden(1)
 
         """epsilon"""
         epsilon = 0 if evaluate else self.epsilon
