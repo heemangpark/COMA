@@ -22,6 +22,7 @@ def setting_args():
     parser.add_argument('--result_dir', type=str, default='./result', help='result directory of the policy')
     parser.add_argument('--load_model', type=bool, default=False, help='whether to load the pretrained model')
     parser.add_argument('--evaluate', type=bool, default=False, help='whether to evaluate the model')
+    parser.add_argument('--buffer_size', type=int, default=5000, help='the size of buffer')
     args = parser.parse_args()
     return args
 
