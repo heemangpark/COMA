@@ -23,7 +23,6 @@ def setting_args():
     parser.add_argument('--load_model', type=bool, default=False, help='whether to load the pretrained model')
     parser.add_argument('--evaluate', type=bool, default=False, help='whether to evaluate the model')
     args = parser.parse_args()
-
     return args
 
 

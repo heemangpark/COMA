@@ -10,7 +10,7 @@ class ReplayBuffer:
         self.n_agents = self.args.n_agents
         self.state_shape = self.args.state_shape
         self.obs_shape = self.args.obs_shape
-        self.size = self.args.buffer_size
+        self.size = 5000
         self.episode_limit = self.args.episode_limit
         # memory management
         self.current_idx = 0
